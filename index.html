@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State of Idaho</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Idaho (Home)</a></li>
+            <li><a href="boise.html">Boise (Capital)</a></li>
+            <li><a href="coeur-dalene.html">Coeur d'Alene</a></li>
+            <li><a href="pocatello.html">Pocatello</a></li>
+        </ul>
+        </ul>
+    </nav>
+    <header class="hero">
+        <h1>Adventure awaits you in Idaho!</h1>
+    </header>
+    <main>
+        <aside>
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>Capital: Boise</li>
+                <li>Population: 1.7 million</li>
+                <li>Statehood: July 3, 1890</li>
+                <li>Time Zone: Mountain</li>
+            </ul>
+        </aside>
+        <section>
+            <h2>
+                No Small Potatoes
+            </h2>
+            <p>
+                Idaho is known for its potatoes, but it's also home to a number of other attractions. The state is home
+                to the
+                largest elk population in the United States, and it's also home to the deepest river gorge in North
+                America.
+                The Snake River Canyon is deeper than the Grand Canyon!
+            </p>
+            <p>
+                Although Idaho is a landlocked state, it has plenty of water. The state is home to over 3,000 rivers and
+                more
+                than 2,000 lakes. The state's largest lake, Lake Pend Oreille, is over 1,100 feet deep.
+            </p>
+            <p>
+                You can learn more about Idaho's natural resources by visiting the Idaho State Parks & Recreation
+                website at
+                <a href="https://parksandrecreation.idaho.gov/" target="_blank">this link</a>. (Link will open in a new
+                tab.)
+            </p>
+            <div class="floating-img"><img src="images/idaho-mountains.jpg" alt=""></div>
+        </section>
+        <section>
+            <h2>Contact us</h2>
+            <form action="">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="confirm-email">Confirm your Email:</label>
+                <input type="email" id="confirm-email" name="confirm-email">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Dalton Willard</p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        var email = document.getElementById('email').value;
+        var confirmEmail = document.getElementById('confirm-email').value;
+
+        if (email !== confirmEmail) {
+            alert('Email addresses do not match.');
+            event.preventDefault();
+        }
+    });
+</script>
+
+<!-- Sources -->
+<!-- https://en.wikipedia.org/wiki/Idaho -->
+<!-- https://en.wikipedia.org/wiki/Boise,_Idaho -->
+<!-- https://en.wikipedia.org/wiki/Coeur_d%27Alene,_Idaho -->
+<!-- https://en.wikipedia.org/wiki/Pocatello,_Idaho -->
+<!-- https://en.wikipedia.org/wiki/Snake_River_Canyon_(Idaho) -->
