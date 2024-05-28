@@ -11,7 +11,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Idaho (Home)</a></li>
+            <li><a href="index.html" class="current-page">Idaho (Home)</a></li>
             <li><a href="boise.html">Boise (Capital)</a></li>
             <li><a href="coeur-dalene.html">Coeur d'Alene</a></li>
             <li><a href="pocatello.html">Pocatello</a></li>
@@ -47,6 +47,7 @@
                 more
                 than 2,000 lakes. The state's largest lake, Lake Pend Oreille, is over 1,100 feet deep.
             </p>
+            
             <p>
                 You can learn more about Idaho's natural resources by visiting the Idaho State Parks & Recreation
                 website at
@@ -54,6 +55,56 @@
                 tab.)
             </p>
             <div class="floating-img"><img src="images/idaho-mountains.jpg" alt=""></div>
+        </section>
+        <section>
+            <h2>Majestic Mountains</h2>
+            <p>
+                Idaho is home to some of the most beautiful mountains in the United States. The state is home to over 100
+                mountain ranges, including the Sawtooth Range, the Lost River Range, and the Bitterroot Range. Here are some
+                facts about Idaho's highest peaks:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Elevation</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Borah Peak</td>
+                        <td>12,668 ft / 3861.2 m</td>
+                        <td>44.1374°N 113.7811°W</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Leatherman Peak</td>
+                        <td>12,233 ft / 3729 m</td>
+                        <td>44.0820°N 113.7330°W</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Diamond Peak</td>
+                        <td>12,202 ft / 3719.3 m</td>
+                        <td>44.1414°N 113.0827°W</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Hyndman Peak</td>
+                        <td>12,012 ft / 3661.4 m</td>
+                        <td>43.7494°N 114.1311°W</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>USGS Peak</td>
+                        <td>11,988 ft / 3653.8 m</td>
+                        <td>44.0133°N 113.5818°W</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section>
             <h2>Contact us</h2>
@@ -81,7 +132,7 @@
 </html>
 
 <script>
-    document.querySelector('form').addEventListener('submit', function(event) {
+    document.querySelector('form').addEventListener('submit', function (event) {
         var email = document.getElementById('email').value;
         var confirmEmail = document.getElementById('confirm-email').value;
 
@@ -98,3 +149,4 @@
 <!-- https://en.wikipedia.org/wiki/Coeur_d%27Alene,_Idaho -->
 <!-- https://en.wikipedia.org/wiki/Pocatello,_Idaho -->
 <!-- https://en.wikipedia.org/wiki/Snake_River_Canyon_(Idaho) -->
+<!-- https://www.census.gov/ -->
