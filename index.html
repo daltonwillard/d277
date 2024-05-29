@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>State of Idaho</title>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -18,49 +18,58 @@
         </ul>
         </ul>
     </nav>
-    <header class="hero">
+    <header class="header"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/idaho-mountains.jpg');">
         <h1>Adventure awaits you in Idaho!</h1>
     </header>
     <main>
-        <aside>
-            <h2>Fun Facts</h2>
-            <ul>
-                <li>Capital: Boise</li>
-                <li>Population: 1.7 million</li>
-                <li>Statehood: July 3, 1890</li>
-                <li>Time Zone: Mountain</li>
-            </ul>
-        </aside>
-        <section>
-            <h2>
-                No Small Potatoes
-            </h2>
-            <p>
-                Idaho is known for its potatoes, but it's also home to a number of other attractions. The state is home
-                to the
-                largest elk population in the United States, and it's also home to the deepest river gorge in North
-                America.
-                The Snake River Canyon is deeper than the Grand Canyon!
-            </p>
-            <p>
-                Although Idaho is a landlocked state, it has plenty of water. The state is home to over 3,000 rivers and
-                more
-                than 2,000 lakes. The state's largest lake, Lake Pend Oreille, is over 1,100 feet deep.
-            </p>
-            
-            <p>
-                You can learn more about Idaho's natural resources by visiting the Idaho State Parks & Recreation
-                website at
-                <a href="https://parksandrecreation.idaho.gov/" target="_blank">this link</a>. (Link will open in a new
-                tab.)
-            </p>
-            <div class="floating-img"><img src="images/idaho-mountains.jpg" alt=""></div>
-        </section>
+        <div class="section-aside-container">
+            <aside>
+                <h2>Fun Facts</h2>
+                <ul>
+                    <li>Capital: Boise</li>
+                    <li>Population: 1.7 million</li>
+                    <li>Statehood: July 3, 1890</li>
+                    <li>Time Zone: Mountain</li>
+                </ul>
+            </aside>
+            <section>
+                <h2>
+                    No Small Potatoes
+                </h2>
+                <p>
+                    Idaho is known for its potatoes, but it's also home to a number of other attractions. The state is
+                    home
+                    to the
+                    largest elk population in the United States, and it's also home to the deepest river gorge in North
+                    America.
+                    The Snake River Canyon is deeper than the Grand Canyon!
+                </p>
+                <p>
+                    Although Idaho is a landlocked state, it has plenty of water. The state is home to over 3,000 rivers
+                    and
+                    more
+                    than 2,000 lakes. The state's largest lake, Lake Pend Oreille, is over 1,100 feet deep.
+                </p>
+
+                <p>
+                    You can learn more about Idaho's natural resources by visiting the Idaho State Parks & Recreation
+                    website at
+                    <a href="https://parksandrecreation.idaho.gov/" target="_blank">this link</a>. (Link will open in a
+                    new
+                    tab.)
+                </p>
+                <div class="floating-img"><img src="images/elk.jpg"
+                    alt="Elk in the Idaho outdoors."></div>
+            </section>
+        </div>
         <section>
             <h2>Majestic Mountains</h2>
             <p>
-                Idaho is home to some of the most beautiful mountains in the United States. The state is home to over 100
-                mountain ranges, including the Sawtooth Range, the Lost River Range, and the Bitterroot Range. Here are some
+                Idaho is home to some of the most beautiful mountains in the United States. The state is home to over
+                100
+                mountain ranges, including the Sawtooth Range, the Lost River Range, and the Bitterroot Range. Here are
+                some
                 facts about Idaho's highest peaks:
             </p>
             <table>
@@ -106,7 +115,7 @@
                 </tbody>
             </table>
         </section>
-        <section>
+        <section id="contact-form">
             <h2>Contact us</h2>
             <form action="">
                 <label for="first-name">First Name:</label>
@@ -150,3 +159,5 @@
 <!-- https://en.wikipedia.org/wiki/Pocatello,_Idaho -->
 <!-- https://en.wikipedia.org/wiki/Snake_River_Canyon_(Idaho) -->
 <!-- https://www.census.gov/ -->
+<!-- https://pexels.com [images] -->
+<!-- https://unsplash.com [images] -->
